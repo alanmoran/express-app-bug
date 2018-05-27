@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 		// Join our strings
 		response = response + name;
 		// Return response to client
-		res.send(response)
+		res.send(response);
 	});
 
 });
