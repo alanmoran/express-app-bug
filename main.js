@@ -16,10 +16,10 @@ app.get('/', function(req, res) {
 		}
 		// Join our strings
 		response = response + name;
-	});
 
-	// Return response to client
-	res.send(response)
+		// Return response to client
+		res.send(response)
+	});
 })
 
 
@@ -34,4 +34,4 @@ function getUserName(callback) {
 }
 
 // Port for server to start and listen on
-app.listen(3000, () => console.log('Buggy app listening on port 3000!'))
+app.listen(3000, () => console.log('App listening on port 3000!'))
