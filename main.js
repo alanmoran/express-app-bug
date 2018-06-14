@@ -16,10 +16,10 @@ app.get('/', function(req, res) {
 		}
 		// Join our strings
 		response = response + name;
-	});
 
-	// Return response to client
-	res.send(response)
+		// Return response to client
+		res.send(response)
+	});
 })
 
 
