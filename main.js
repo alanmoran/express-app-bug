@@ -16,15 +16,16 @@ app.get('/', function(req, res) {
 		}
 		// Join our strings
 		response = response + name;
+		res.send(response)
 	});
 
 	// Return response to client
-	res.send(response)
+	//res.send(response)
 })
 
 
 // This function will return our username to print
-function getUserName(callback) {
+async function getUserName(callback) {
 	// Wrapping it in a timeout 
 	// to simulate if this is a database request
 	setTimeout(function() {
