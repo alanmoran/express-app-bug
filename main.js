@@ -24,7 +24,7 @@ app.get('/', function(req, res) {
 
 
 // This function will return our username to print
-async function getUserName(callback) {
+function getUserName(callback) {
 	// Wrapping it in a timeout 
 	// to simulate if this is a database request
 	setTimeout(function() {
